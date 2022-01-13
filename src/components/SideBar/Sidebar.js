@@ -16,11 +16,11 @@ const SideBar = ({isOpen, toggle}) => {
 
         <SideBarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
-                <CloseIcon isOpen={isOpen}/>
+                <CloseIcon />
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink isOpen={isOpen}to="about">
+                    <SideBarLink to="about">
                         About
                     </SideBarLink>
                     <SideBarLink to="discover">
