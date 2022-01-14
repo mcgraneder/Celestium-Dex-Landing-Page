@@ -11,10 +11,9 @@ import { InfoContainer,
          BtnWrapper,
          Column2, 
          ImgWrapper, 
-         Img} from "./InfoSectionStyles";
-import { HeroButtonWrapper } from "../HeroSection/HeroSectionStyles";
-import img1 from "../assets/svg/trading.svg"
-const InfoSection = ({lightBg, imgStart, id, topLine, headline, description, buttonLabel, img, alt, primary, dark, lightText, darkText}) => {
+         Img} from "./DiscoverSectionStyles";
+import img1 from "../assets/svg/login.svg"
+const DiscoverSection = ({lightBg, imgStart, id, topLine, headline, description, buttonLabel, img, alt, primary, dark, lightText, darkText}) => {
 
     return (
 
@@ -45,4 +44,4 @@ const InfoSection = ({lightBg, imgStart, id, topLine, headline, description, but
 
 }
 
-export default InfoSection
+export default DiscoverSection

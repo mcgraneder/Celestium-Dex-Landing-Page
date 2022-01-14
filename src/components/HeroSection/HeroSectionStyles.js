@@ -16,7 +16,7 @@ export const HeroContainer = styled.div`
 
 export const HeroBackground = styled.div`
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -26,6 +26,10 @@ export const HeroBackground = styled.div`
     overflow: hidden;
     border-bottom: 2px solid rgb(25,25,42);
 
+    @media screen and (max-width: 768px) {
+
+        height: 100%;
+    }
 `
 
 export const VideoBackground = styled.video`
@@ -39,7 +43,7 @@ export const VideoBackground = styled.video`
 
 export const HeroContent = styled.div`
 
-    margin-top: 180px;
+    margin-top: 150px;
     z-index: 3;
     max-width: 1050px;
     position: absolute;
@@ -74,7 +78,7 @@ height: 100%;
     top: 0px;
     left: 0px;
     z-index: 3;
-    background:  rgba(26,26,39, 0.4);
+    background:  rgba(26,26,39, 0.6);
 `
 
 export const TopLine = styled.p`
