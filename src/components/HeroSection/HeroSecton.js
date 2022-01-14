@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Video from "../assets/video.mp4"
+import Video from "../assets/video4.mp4"
 import { Button } from "../ButtonStyles";
 import { HeroContainer, 
          HeroBackground, 
@@ -9,9 +9,12 @@ import { HeroContainer,
          HeroP,
          HeroButtonWrapper,
          ArrowForward,
-         ArrowRight 
+         ArrowRight, 
+         OverLay,
+         TopLine 
 } from "./HeroSectionStyles";
 import { NavBtn, NavBtnLink } from "../Navbar/NavbarStyles";
+
 const HeroSection = () => {
 
     const [hover, setHover] = useState(false);
@@ -25,10 +28,12 @@ const HeroSection = () => {
 
         <HeroContainer id="home">
             <HeroBackground>
+                <OverLay></OverLay>
                 <VideoBackground autoPlay loop muted src={Video} type="video/mp4">
                 </VideoBackground>
             </HeroBackground>
             <HeroContent>
+                <TopLine >Premium DEX</TopLine>
                 <HeroH1>
                     Celestium Descentralised Crypto Exchange
                 </HeroH1>
@@ -39,9 +44,6 @@ const HeroSection = () => {
                     <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
                         Trade {hover ? <ArrowForward/> : <ArrowRight/>}
                     </Button>
-                    {/* <NavBtn>
-                        <NavBtnLink to="/signup">Sign Up</NavBtnLink>
-                    </NavBtn> */}
                 </HeroButtonWrapper>
             </HeroContent>
         </HeroContainer>

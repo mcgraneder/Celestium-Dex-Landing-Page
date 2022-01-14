@@ -10,6 +10,8 @@ export const HeroContainer = styled.div`
     height: 800px;
     position: relative;
     z-index: 1;
+    border-bottom: 2px solid rgb(25,25,42);
+    
 `
 
 export const HeroBackground = styled.div`
@@ -20,8 +22,9 @@ export const HeroBackground = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
+    border-bottom: 2px solid rgb(25,25,42);
 
 `
 
@@ -36,6 +39,7 @@ export const VideoBackground = styled.video`
 
 export const HeroContent = styled.div`
 
+    margin-top: 180px;
     z-index: 3;
     max-width: 1050px;
     position: absolute;
@@ -48,7 +52,7 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
 
     color: #fff;
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
     font-weight: bold;
 
@@ -62,12 +66,35 @@ export const HeroH1 = styled.h1`
         font-size: 32px;
     }
 `
+export const OverLay = styled.div`
+
+height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    background:  rgba(26,26,39, 0.4);
+`
+
+export const TopLine = styled.p`
+
+    color: #01bf71;
+    font-size: 25px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    text-align: left;
+`
+
 
 export const HeroP = styled.p`
 
     margin-top: 30px;
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     max-width: 700px;
 
@@ -88,7 +115,7 @@ export const HeroButtonWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    // z-index: 10000;
+    z-index: 100;
 `
 
 export const ArrowForward = styled(MdArrowForward)`

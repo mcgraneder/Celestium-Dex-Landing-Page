@@ -6,7 +6,8 @@ export const Nav = styled.nav`
     position: fixed;
     top: 0;
     width: 100%;
-    background:  rgba(6,6,19, 0.4);;
+    background-color:  rgba(22,25,44, 0.7);
+    backdrop-filter: blur(10px);
     height: 80px;
     // margin-top: -80px;
     display: flex;
@@ -16,6 +17,7 @@ export const Nav = styled.nav`
     // position: sticky;
     top: 0;
     z-index: 10;
+    
     border-bottom: 2px solid rgb(25,25,42);
 
     @media screen and (max-width: 960px) {
@@ -34,6 +36,7 @@ export const NavContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1300px;
+    
 `
 
 export const NavLogo = styled(LinkR)`
@@ -76,6 +79,7 @@ export const NavMenu = styled.ul`
     list-style: none;
     text-align: center;
     margin-right: 22px;
+    
 
     @media screen and (max-width: 768px) {
 
@@ -86,6 +90,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
 
     height: 80px;
+    
 
 `
 
@@ -102,8 +107,10 @@ export const NavLinks = styled(LinkS)`
 
     &:active {
 
-        border-bottom: 1px solid #01bf71
+        border-bottom: 1px solid #01bf71;
     }
+
+   
 `
 
 export const NavBtn = styled.nav`
