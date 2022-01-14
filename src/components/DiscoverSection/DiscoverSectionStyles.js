@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
 
-    color: #fff;
-    background: ${(props) => !props.lightBg ? "rgb(12,15,35)" : "rgb(77, 102, 235)"};
-
-    @media screen and (max-width: 768px) {
-
-        padding: 100px 0;
-    }
+   background: rgba(22,25,44, 0.6);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid rgb(25,25,42);
 `
 
 export const InfoWrapper = styled.div`

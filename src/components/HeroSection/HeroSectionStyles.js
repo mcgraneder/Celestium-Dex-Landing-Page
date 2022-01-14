@@ -24,7 +24,6 @@ export const HeroBackground = styled.div`
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    border-bottom: 2px solid rgb(25,25,42);
 
     @media screen and (max-width: 768px) {
 
