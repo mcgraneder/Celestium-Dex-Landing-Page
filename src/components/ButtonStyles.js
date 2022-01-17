@@ -3,26 +3,27 @@ import { Link } from "react-scroll"
 
 export const Button = styled(Link)`
 
-    border-radius: 50px;
-
-    background: ${({primary}) => (primary ? `rgb(57, 82, 215)` : `010606`)};
+    border-radius: 10px;
+    // margin-right: 80px;
+    background: ${(props) => (props.primary ? `rgb(57, 82, 215)` : `rgb(22,181,127)`)};
     white-space: nowrap;
-    border: 1px solid #f76fb1;
+    height: 50px;
     padding: ${({big}) => (big ? `14px 48px` : `12px 30px`)};
-    width: ${({big}) => (big ? `100px` : `200px`)};
-    color: ${(dark) => (dark ? `#010606` : `#fff`)};
-    font-size: ${(fontBig) => (fontBig ? `25px` : `16px`)};
+    width: ${({big}) => (big ? `100px` : `210px`)};
+    color: ${(dark) => (dark ? `#fff` : `#fff`)};
+    font-size: ${(fontBig) => (fontBig ? `20px` : `16px`)};
     outline: none;
     // border: none;
     cursor: pointer;
     display: flex;
+    flex-direction: space-between;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
     // z-index: 100000000;
 
     &:hover {
-        background: ${(primary) => (primary ? `#f76fb1` : `#f76fb1`)};
+        background: ${(props) => (!props.primary ? `rgb(52,201,157)` : `rgb(77, 92, 235)`)};
         transition: all 0.2s ease-in-out;
     }
 `

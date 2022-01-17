@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
 
-    background: rgba(22,25,44, 0.7);
+    background: rgba(26,26,39, 0.45);
     display: grid;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 100%;
+    height: 850px;
     position: relative;
     z-index: 1;
     border-bottom: 2px solid rgb(25,25,42);
@@ -145,7 +145,7 @@ export const HeroContent = styled.div`
     // position: absolute;
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 100px;
+    // margin-bottom: 30px;
     padding: 8px 50px;
     display: grid;
     flex-direction: column;
@@ -186,7 +186,7 @@ export const Content2 = styled.div`
 export const HeroH1 = styled.h1`
 
     color: rgb(57, 82, 215);
-    font-size: 42px;
+    font-size: 47px;
     text-align: center;
     font-weight: bold;
     max-width: 1100px;

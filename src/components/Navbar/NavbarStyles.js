@@ -103,10 +103,11 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 17px;
 
-    &:active {
+    &:hover {
 
+        color: rgb(52,201,157);
         border-bottom: 1px solid #01bf71;
     }
 

@@ -5,6 +5,8 @@ import HeroSection from "../HeroSection/HeroSecton";
 import InfoSection from "../InfoSection/InfoSecton";
 import { HomeObjOne, HomeObjTwo } from "../InfoSection/Data";
 import DiscoverSection from "../DiscoverSection/DiscoverSection";
+import StyledMarquee from "../Marquee/Marquee";
+
 const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +23,7 @@ const Home = () => {
             <SideBar isOpen={isOpen} toggle={toggle}></SideBar>
             <Navbar toggle={toggle}></Navbar>
             <HeroSection></HeroSection>
+            <StyledMarquee></StyledMarquee>
             <InfoSection {...HomeObjOne}></InfoSection>
             <DiscoverSection {...HomeObjTwo}></DiscoverSection>
         </>

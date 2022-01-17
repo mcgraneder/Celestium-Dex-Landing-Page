@@ -11,17 +11,25 @@ import { HeroContainer,
          ArrowForward,
          ArrowRight, 
          OverLay,
-         TopLine 
+         TopLine,
+         ImageContainer,
+         ImageWrapper 
 } from "./HeroSectionStyles";
 import { NavBtn, NavBtnLink } from "../Navbar/NavbarStyles";
-
+import coinbase from "../assets/svg/coinbase1.png"
 const HeroSection = () => {
 
-    const [hover, setHover] = useState(false);
+    const [hoverRight, setHoverRight] = useState(false);
+    const [hoverLeft, setHoverLeft] = useState(false);
 
-    const onHover = () => {
+    const onHoverLeft = () => {
 
-        setHover(!hover);
+        setHoverLeft(!hoverLeft);
+    }
+
+    const onHoverRight = () => {
+
+        setHoverRight(!hoverRight);
     }
 
     return (
@@ -33,19 +41,27 @@ const HeroSection = () => {
                 </VideoBackground>
             </HeroBackground>
             <HeroContent>
-                <TopLine >Premium DEX</TopLine>
+                <TopLine >Celestium-DEX</TopLine>
                 <HeroH1>
-                    Celestium Descentralised Crypto Exchange
+                    Perpetuals, Decentralised
                 </HeroH1>
                 <HeroP>
-                    Sign up for a new account to start trading with all of the top crypto currencies in the market today.
+                    Celestium is an advanced decentralised protocol that allows you to trade the top crypto assets with zero fees. Create an account and get started using outr exchange below.
                 </HeroP>
                 <HeroButtonWrapper>
-                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
-                        Trade {hover ? <ArrowForward/> : <ArrowRight/>}
+                    <Button to="signup" onMouseEnter={onHoverLeft} onMouseLeave={onHoverLeft} primary={true} dark="true">
+                        Trade {hoverLeft ? <ArrowForward/> : <ArrowRight/>}
+                    </Button>
+                    <Button to="about" onMouseEnter={onHoverRight} onMouseLeave={onHoverRight} primary={false} dark="true">
+                        Documentation {hoverRight ? <ArrowForward/> : <ArrowRight/>}
                     </Button>
                 </HeroButtonWrapper>
             </HeroContent>
+           
+            <ImageContainer>
+                <ImageWrapper src={coinbase}>
+                </ImageWrapper>
+            </ImageContainer>
         </HeroContainer>
     )
 

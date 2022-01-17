@@ -30,7 +30,7 @@ const InfoSection = ({lightBg, imgStart, id, topLine, headline, description, but
             <InfoContainer lightBg={lightBg} id={id}>
             <HeroContent>
                 <HeroH1>
-                    Get The benefits of traditional trading on the blockhain
+                    Trading Without Limits
                 </HeroH1>
                 
                 <HeroP>
@@ -46,7 +46,7 @@ const InfoSection = ({lightBg, imgStart, id, topLine, headline, description, but
                     <Column3></Column3> */}
                     <Container>
                          <ImgWrapper>
-                            <img src={candle} height="80px"></img>
+                            <img src={candle} height="90px"></img>
                         </ImgWrapper>
                         <TextWrapper>
                                 
@@ -56,7 +56,7 @@ const InfoSection = ({lightBg, imgStart, id, topLine, headline, description, but
                     </Container>
                     <Container>
                         <ImgWrapper>
-                            <img src={Ren2} height="80px"></img>
+                            <img src={Ren2} height="90px"></img>
                         </ImgWrapper>
                         <TextWrapper>
                                 
@@ -66,7 +66,7 @@ const InfoSection = ({lightBg, imgStart, id, topLine, headline, description, but
                     </Container>
                     <Container>
                         <ImgWrapper>
-                            <img src={Ren3} height="80px"></img>
+                            <img src={Ren3} height="90px"></img>
                         </ImgWrapper>
                         <TextWrapper>
                                 
